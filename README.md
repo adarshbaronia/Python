@@ -1,2 +1,2 @@
 # Python
-This reposotiory is created to learn and to code in Python.
+This repository is created to learn and to code in Python.
