@@ -1,0 +1,26 @@
+movies = [
+    ("Eternal Sunshine of spotless Mind", 20000000),
+    ("Inception", 55000000),
+    ("Avengers: Age of Ultron", 40000000),
+    ("Bahubali", 29000000),
+    ("1917", 27000000),
+    ("Joker", 35000000)
+]
+
+total_budget = 0
+over_avg_count = 0
+
+for movie in movies:
+    total_budget = total_budget + movie[1]
+
+avg_budget = total_budget / len(movies)
+print("Average budget of the movies is: {}".format(avg_budget))
+print()
+for movie in movies:
+    if movie[1] > avg_budget:
+        over_avg_count += 1
+        over_avg_cost = movie[1] - avg_budget
+        print(f"{movie[0]} cost ${movie[1]}: ${over_avg_cost} over average.")
+        print()
+
+print(f"Total {over_avg_count} movies are more than average budget.")
