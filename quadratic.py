@@ -10,7 +10,7 @@ print()
 qurd_equation = int(input("How many equations would yu like to solve today: "))
 #sloving problem with initating a loop
 for i in range(qurd_equation):
-    print("Solving equation #" + str(i+1))
+    print("Solving equation #" + str(i+1)) 
     print("-------------------------")
     print()
     #ask for user inputs
