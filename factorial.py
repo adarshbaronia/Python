@@ -24,4 +24,4 @@ for i in range(1, fact_number + 1):
     f2 = f2 * i
 print(f"The factorial of {fact_number}! is {f2}")
 print()
-print("Thank you!!")
+print("Thank you!!") 
