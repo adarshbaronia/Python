@@ -31,4 +31,4 @@ with open('output.csv', mode='w', newline='') as outputFile:
         currency = price[:1]
         prices = price[1:]
         amazon_prices.writerow([title, prices, currency, stars, numberRatings])
-        #print(currency, prices)
+        #print(currency, prices) 
