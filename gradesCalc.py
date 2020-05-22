@@ -71,6 +71,6 @@ print("\n Too bad your original grades are stilll the same!")
 for g in grades:
     print("\t" + str(g))
 print()
-print(f"Good luck {name}! Hope you acheieve it!")
+print(f"Good luck {name}! Hope you acheieve it!") 
 
 
