@@ -37,4 +37,4 @@ print("Decimal-----Binary-----Hexadecimal")
 print()
 
 for d, b, h in zip(decimal, binary, hexadecimal):
-    print(str(d)+"-----"+str(b)+"-----"+str(h))
+    print(str(d)+"-----"+str(b)+"-----"+str(h)) 
