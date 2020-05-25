@@ -9,9 +9,8 @@ print(str(fact_number) + "!  =", end="")
 for i in range(1, fact_number):
     print(str(i), end='*')
 print(str(fact_number), end='')
-
 print()
-print()
+print() 
 print("Here is the result from the math library: ")
 f1 = math.factorial(fact_number)
 print(f"The factorial of {fact_number}! is {f1}")
