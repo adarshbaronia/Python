@@ -6,7 +6,7 @@ driver = webdriver.Chrome("G:/machine/web_scrap/chromedriver/chromedriver.exe")
 
 dataframe = pd.DataFrame(columns=["Ttitle", "Location", "Company","Salary"])
 for i in range(0, 20, 2):
-    driver.get("https://www.indeed.co.in/jobs?q=data+science&l=India&start="+str(i))
+    driver.get("https://www.indeed.co.in/*********"+str(i))
     driver.implicitly_wait(4)
 
 all_jobs = driver.find_elements_by_class_name('result')
