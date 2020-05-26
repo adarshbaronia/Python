@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import csv
 
 page = requests.get(
-    "https://www.amazon.in/s?k=samsung+phones&rh=n%3A1389401031&ref=nb_sb_noss")
+    "https://www.amazon.in/*********")
 # print(page)
 
 soup = BeautifulSoup(page.content, 'html.parser')
