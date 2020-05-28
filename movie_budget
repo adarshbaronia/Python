@@ -23,4 +23,4 @@ for movie in movies:
         print(f"{movie[0]} cost ${movie[1]}: ${over_avg_cost} over average.")
         print()
 
-print(f"Total {over_avg_count} movies are more than average budget. ")
+print(f"Total {over_avg_count} movies are more than average budget. ") 
