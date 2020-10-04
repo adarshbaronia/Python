@@ -40,23 +40,26 @@ while playing:
     #a single round loop
     while guess != game_word:
         print("".join(blank_word))
-        guess = input("\nEnter your guess: ").lower()
-        guess_count += 1
+        guess=input("\n Enter your guess: ").lower()
+        guess_count+=1
 
-        #guess is correct, user won the game
-        if guess == game_word:
-            print(f"\nCorrect! You guesses the word in {str(guess_count)} guesses.")
+        if guess==game_word:
+            print(f"You have guessed the correct word in {str(guess_count)} attempts")
+            break
+        elif guess_count<len(game_word):
+            print(f"Try again with another hint")
+        elif guess_count ==len(game_word):
+            print(f"\n The correct word is: {game_word}")
+            print(f"\nAttempts Over")
             break
 
-        else:
-            print("That is not correct. Try again with a hint!")
-            #loop to replace '- in blank word to reveal a letter for hint
-            swapping = True
-            while swapping:
-                letter_index = random.randint(0, len(game_word)-1)
-                if blank_word[letter_index] == "-":
-                    blank_word[letter_index] = game_word[letter_index]
-                    swapping = False
+        #loop to replace '- in blank word to reveal a letter for hint
+        swapping = True
+        while swapping:
+            letter_index = random.randint(0, len(game_word)-1)
+            if blank_word[letter_index] == "-":
+                blank_word[letter_index] = game_word[letter_index]
+                swapping = False
 
     choice = input("\nWould you like to play again (y/n): ").lower()
     if choice != 'y':
